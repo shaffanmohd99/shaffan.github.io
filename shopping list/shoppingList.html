@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shoppingList.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <div id="shopppingListContainer">
+            <ul id="myList">
+                <li> 
+                    <div id="box" class="entry-box">
+                        <input type="text" id="price" class="calc-price" placeholder="Price"  oninput="calculate()">
+                        <input type="text" id="quantity" placeholder="Quantity"  class="calc-quantity"oninput="calculate()">
+                        <input type="text" class="calc-display" id="totalPriceItem" placeholder="Total" >
+                    </div>
+                </li>
+                
+                
+                
+            </ul>
+            <button onclick=" addLine()">Add a new line</button>
+            <div id="totalPriceForAll">Total</div>  
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script src="./shppingList.js"></script>

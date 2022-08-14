@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assigment6style.css">
+    <title>video player</title>
+</head>
+<body>
+    <div id="container">
+        <div id="mainVideo">
+            <h1 id="videoTitle">This is a fish video</h1>
+            <video controls id="mainVideoID" >
+                <source  src="./assets/Fish - 110879.mp4">
+            </video>
+            <div id="navbar">
+                <button onclick=videoController(0)>Play/Pause</button>
+                <button onclick=videoController(1)>Reset</button>
+                <button onclick=videoController(2)>Vol Down</button>
+                <button onclick=videoController(3)>Vol Up</button>
+                <button onclick=videoController(4)>Switch</button>
+            </div>
+        </div>
+        <div id="sideVideo">
+            <video  onclick=videoSwitch(0)>
+                <source id="video1"  src="./assets/Fish - 110879.mp4">
+            </video>
+            <h2> This is a fish video</h2>
+            <video onclick=videoSwitch(1) >
+                <source id="video2" src="./assets/Woman - 58142.mp4">
+            </video>
+            <h2> This is a pink flower video</h2>
+            <video onclick=videoSwitch(2) >
+                <source id="video3" src="./assets/Wood Anemones - 112429.mp4">
+            </video>
+            <h2> This is a white flower video</h2>
+        </div>
+    </div>
+</body>
+</html> 
+
+<script src="./assignment6JS.JS">
+    
+</script>
