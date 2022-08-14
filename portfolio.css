@@ -22,10 +22,17 @@
 html {
     scroll-behavior: smooth;
   }
-  a{
+a{
     all: unset;
     cursor: pointer;
+    transition: 300ms;
   }
+ #navbarList> li>a:hover {
+    color:var(--lightest-navy); 
+    text-decoration: underline;
+  }
+
+
 body{
     width: 100vw;
     display: flex;
@@ -99,9 +106,13 @@ p{
     bottom: 0;
     margin-left: 20px;
 }
+#navbarLeft> a> i:hover{
+    color: var(--white);
+}
 i{
     font-size: 25px;
     color: var(--green-color);
+    transition: 700ms;
 }
 .vertical-line-left{
     height: 80px;
@@ -116,11 +127,15 @@ i{
     bottom: 0;
     right: 0;
 }
-#navbarRight>p{
+#navbarRight>a>p{
     transform: rotate(90deg);
     margin-bottom: 150px;
     margin-right: -153px;
+    transition: 700ms;
     
+}
+#navbarRight>a>p:hover{
+    color: var(--white);
 }
 .vertical-line-right{
     height: 80px;
@@ -220,11 +235,15 @@ li{
     position: relative;
     
 }
-.hobby-box >img{
+.hobby-box >a>img{
     width: 100%;
     height: 100%;
     z-index:4;
    
+}
+.hobby-box >a>img:hover{
+   outline: 15px solid var(--green-color);
+   transition: 700ms;
 }
 .text-box-hobby{
     width: 300px;
@@ -235,7 +254,7 @@ li{
     justify-content: center;
     position: absolute;
     bottom:20px;
-    left: 10px;
+    left: 18px;
     
  
 }
@@ -260,13 +279,14 @@ li{
 }
 
 .text-box-hobby-3{
-    width: 40px;
+    width: 50px;
     height: 103%;
     background-color:var(--white );
     position: absolute;
     top: -20px;
     left: -40px;
     z-index: 0;
+    
 }
 
 /* Fourth Page */
@@ -290,15 +310,42 @@ margin-bottom: 280px;
     align-items: center;
     margin-top: 100px;
     padding: 20px;
+    gap: 30px;
 }
-.project-outer-box>img{
+.project-outer-box> a> img{
    object-fit: contain;
-   height: 200px;
-   width: 300px;
+   max-height: 200px;
+   max-width: 300px;
+}
+.project-outer-box> a>p:hover{
+    color: var(--lightest-navy);
+    background-color: var(--green-color);
+    transition: 700ms;
+}
+.project-outer-box> a> img:hover{
+    border: 8px solid var(--green-color);
+    transition: 700ms;
 }
 .project-outer-box>h4{
    text-align: center;
    width: 350px;
+ }
+ /* fifth page */
+ #fifthPage{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    /* align-items: center; */
+}
+#fifthPage a>p{
+   font-size: 15px;
+}
+#icons {
+    display: flex;
+    gap: 15px;
+}
+ #icons a>i{
+    font-size: 15px;
  }
 
 
@@ -319,14 +366,16 @@ margin-bottom: 280px;
         display: none;
     }
     #title >h3{
-        max-width: 500px;
+        width: 500px;
+        
         font-size: 30px;
     }
     h1{
         font-size: 60px;
     }
     #title>h1{
-        max-width: 500px;
+        width: 100vw;
+        max-width: 600px;
     }
     #title{
         gap: 40px;
@@ -343,5 +392,9 @@ margin-bottom: 280px;
     /* fourth page */
     #myProjectContainer{
         flex-direction: column;
+    }
+    /* fifth page */
+    #fifthPage{
+        display: flex;
     }
  }

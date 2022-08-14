@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="food.css">
+    <title>Food</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="topBox" style="text-align: center;background-color:#EDDFB3 ;border-radius: 30px;margin-top: 30px;width: 80%;">Shaffan Masak Apa Hari Ni?</h1>
+        <div id="mainFood">
+            <div id="mainFoodText">
+                <div>
+                    <h3>Name of Food</h3>
+                    <p id="foodTitle">Tomahawk Steak</p>
+                </div>
+                <div>
+                    <h3>Origin</h3>
+                    <p id="origin">Western Countries</p>
+                </div>
+                <div>
+                    <h3>Description</h3>
+                    <p id="description">An expensive food at restaurant but very easy to make. Seasoned the steaks overnight and using a reverse-sear method to cook it. If you have a thermometer, you can't go wrong.</p>
+                </div>
+            </div>
+            <div id="foodImg">
+                <img id="mainFoodPic" src="./assets/food.jpg" alt="">
+            </div>
+        </div>
+        <div id="foodSelection">
+            <h1 style="margin-bottom: 30px;margin-top: 30px;text-align: center;background-color:#B09B71 ;border-radius: 30px;width: 80%;">Food Gallery</h1>
+            <div id="foodGalleryContainer">
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(0)" src="./assets/food.jpg" alt=""></a>
+                    <div class="food-box-text"><h2>Tomahawk Steak</h2></div>
+                </div>
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(1)" src="./assets/photo_6325672196722242023_y.jpg" alt=""></a>
+                    <div class="food-box-text">
+                        <h2>Chicken Katsu Curry</h2>
+                    </div>
+                </div>
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(2)" src="./assets/photo_6325672196722242024_y.jpg" alt=""></a>
+                    <div class="food-box-text"><h2>Braised Short Ribs</h2></div>
+                </div>
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(3)" src="./assets/photo_6325672196722242025_y.jpg" alt=""></a>
+                    <div class="food-box-text"><h2>Kung Pao Chicken</h2></div>
+                </div>
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(4)" src="./assets/photo_6325672196722242026_y.jpg" alt=""></a>
+                    <div class="food-box-text"><h2>Pad Thai</h2></div>
+                </div>
+                <div class="food-box">
+                    <a href="#topBox"><img onclick="picSwitch(5)" src="./assets/photo_6325672196722242029_y.jpg" alt=""></a>
+                    <div class="food-box-text"><h2>Ramen</h2></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./food.js"></script>
