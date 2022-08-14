@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+table{
+    width: 50%;
+    height: 50%;
+}
+button{
+    /* position: absolute; */
+    width: 180px;
+    height: 56px;
+    
+    /* Btn BG */
+    background: linear-gradient(90deg, #0067F4 -3.33%, #0067F4 17.47%, rgba(43, 219, 220, 0.5) 114.17%);
+    border-radius: 1000px;
+    border-color: #0067F4;
+    font-size: 30px;
+}
