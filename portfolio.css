@@ -47,6 +47,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* FONT */
 h1{
     font-family: var(--main-font);
     font-size: 80px;
@@ -78,6 +79,17 @@ p{
     font-size: 20px;
     font-weight: 300;
     color: var(--green-color);
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+li{
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
 }
 /* navbar */
 #navbar{
@@ -141,18 +153,6 @@ i{
     height: 80px;
     border-right: 6px solid var(--green-color);
 }
-/* FONT */
-ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-li{
-    font-family: var(--main-font);
-    font-size: 15px;
-    font-weight: 300;
-    color: black;
-}
 
 
 /* FISRT PAGE  */
@@ -163,13 +163,47 @@ li{
     
 }
 #title{
+    width: 1000px;
+    height: 500px;
     margin-top: 250px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
+}
+.vertical-frame{
+    position: absolute;
+    height: 120px;
+    border: 4px solid var(--green-color);
+
+}
+.horizontal-frame{
+    position: absolute;
+    width: 120px;
+    border: 4px solid var(--green-color);
+
+}
+#titleLine1{
+    left: -25px;
+    top: -25px;
+
+}
+#titleLine2{
+    left: -25px;
+    top: -25px;
+
+}
+#titleLine3{
+    right: 0;
+    bottom: 230px;
+}
+#titleLine4{
+    bottom: 230px;
+    right: 0;
 }
 #title >h3{
-    width: 1000px;
+    /* width: 1000px; */
 }
 
 
@@ -347,6 +381,15 @@ margin-bottom: 280px;
  #icons a>i{
     font-size: 15px;
  }
+ #icons >a>i:hover{
+    color: var(--white);
+    transition: 700ms;
+ }
+ #fifthPage>a>p:hover{
+    color: var(--white);
+    transition: 700ms;
+ }
+
 
 
  /* MOBILE VERSION */
@@ -357,7 +400,10 @@ margin-bottom: 280px;
         display: flex;
     }
     #navbarList{
-        display: none;
+        /* display: none; */
+    }
+    li{
+        font-size: 15px;
     }
     #navbarLeft{
         display: none;
@@ -366,7 +412,8 @@ margin-bottom: 280px;
         display: none;
     }
     #title >h3{
-        width: 500px;
+        width: 100vw;
+        max-width: 300px;
         
         font-size: 30px;
     }
@@ -375,10 +422,19 @@ margin-bottom: 280px;
     }
     #title>h1{
         width: 100vw;
-        max-width: 600px;
+        max-width: 300px;
     }
     #title{
         gap: 40px;
+    }
+    #titleLine3{
+        bottom: -100px;
+        left: 300px;
+        width: 0;
+    }
+    #titleLine4{
+        bottom: -100px;
+        left: 180px;
     }
     /* second page  */
     #aboutMe{
